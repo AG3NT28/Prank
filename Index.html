@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="college-logo.png"
+    >
+
+    <title>IIT Madras SWAYAM Plus launches free AI courses students</title>
+
+
+    <style>
+
+        /* =========================================================
+           RESET
+        ========================================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #222;
+            background: #fff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+        /* =========================================================
+           TOP BAR
+        ========================================================= */
+
+        .top-bar {
+            background: #f4f4f4;
+            border-bottom: 1px solid #ddd;
+            font-size: 13px;
+        }
+
+        .top-bar-inner {
+            max-width: 1200px;
+            margin: auto;
+            padding: 8px 20px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-links {
+            display: flex;
+            gap: 20px;
+            color: #555;
+        }
+
+        .top-right {
+            display: flex;
+            gap: 15px;
+            color: #555;
+        }
+
+
+        /* =========================================================
+           HEADER
+        ========================================================= */
+
+        header {
+            background: white;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: auto;
+
+            padding: 18px 20px;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            min-height: 90px;
+        }
+
+
+        /* =========================================================
+           COLLEGE LOGO
+           
+           Your file:
+           college-logo.png
+        ========================================================= */
+
+        .logo {
+            width: 88px;
+            height: 88px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            overflow: hidden;
+            flex-shrink: 0;
+
+            border-radius: 50%;
+            border: 2px solid rgba(139, 0, 0, 0.25);
+            background: linear-gradient(135deg, #fff, #f6f0ee);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.09);
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: contain;
+            display: block;
+            padding: 4px;
+        }
+
+
+        /* =========================================================
+           Indian Institute of Technology Madras
+        ========================================================= */
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4px;
+        }
+
+        .brand-text h1 {
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: clamp(20px, 2vw, 26px);
+            line-height: 1.2;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+
+            color: #1f1f1f;
+        }
+
+        .brand-text p {
+            font-size: 12px;
+            color: #777;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+
+        /* =========================================================
+           NAVIGATION
+        ========================================================= */
+
+        nav {
+            background: #8b0000;
+            color: white;
+        }
+
+        .nav-inner {
+            max-width: 1200px;
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-links {
+            display: flex;
+            overflow-x: auto;
+        }
+
+        .nav-links a {
+            padding: 15px 17px;
+
+            font-size: 14px;
+
+            white-space: nowrap;
+
+            transition: background 0.2s;
+        }
+
+        .nav-links a:hover {
+            background: #680000;
+        }
+
+        .search {
+            padding: 0 20px;
+            font-size: 19px;
+        }
+
+
+        /* =========================================================
+           BREADCRUMB
+        ========================================================= */
+
+        .breadcrumb-container {
+            max-width: 1200px;
+            margin: auto;
+
+            padding: 20px;
+        }
+
+        .breadcrumb {
+            font-size: 13px;
+            color: #777;
+        }
+
+        .breadcrumb span {
+            margin: 0 7px;
+        }
+
+
+        /* =========================================================
+           ARTICLE
+        ========================================================= */
+
+        .article-container {
+            max-width: 1000px;
+            margin: auto;
+
+            padding: 10px 20px 70px;
+        }
+
+        .category {
+            display: inline-block;
+
+            background: #8b0000;
+            color: white;
+
+            padding: 6px 12px;
+
+            font-size: 12px;
+            font-weight: bold;
+
+            margin-bottom: 15px;
+        }
+
+        .article-title {
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: clamp(32px, 5vw, 50px);
+
+            line-height: 1.15;
+
+            color: #222;
+
+            margin-bottom: 15px;
+        }
+
+        .date {
+            color: #777;
+            font-size: 14px;
+
+            margin-bottom: 30px;
+        }
+
+        .article-line {
+            width: 100%;
+            height: 1px;
+
+            background: #ddd;
+
+            margin-bottom: 30px;
+        }
+
+
+        /* =========================================================
+           COLLEGE IMAGE
+           
+           Your file:
+           college-phot.jpg
+        ========================================================= */
+
+        .article-image {
+            width: 100%;
+            height: 360px;
+
+            overflow: hidden;
+
+            background: #ddd;
+        }
+
+        .article-image img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            display: block;
+        }
+
+
+        /* =========================================================
+           ARTICLE TEXT
+        ========================================================= */
+
+        .article-content {
+            margin-top: 35px;
+
+            font-size: 17px;
+
+            color: #333;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+        }
+
+        .article-content h2 {
+            font-family: Georgia, "Times New Roman", serif;
+
+            margin: 35px 0 15px;
+        }
+
+
+        /* =========================================================
+           COURSE INFORMATION
+        ========================================================= */
+
+        .course-box {
+            margin-top: 30px;
+
+            border: 1px solid #ddd;
+
+            border-left: 5px solid #8b0000;
+
+            padding: 25px;
+
+            background: #fafafa;
+        }
+
+        .course-box h3 {
+            font-family: Georgia, "Times New Roman", serif;
+
+            margin-bottom: 15px;
+
+            font-size: 24px;
+        }
+
+        .course-details {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 15px;
+
+            margin-top: 15px;
+        }
+
+        .detail {
+            padding: 12px;
+
+            background: white;
+
+            border: 1px solid #eee;
+        }
+
+        .detail strong {
+            display: block;
+
+            color: #555;
+
+            font-size: 12px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 3px;
+        }
+
+
+        /* =========================================================
+           ENROLL BUTTON
+        ========================================================= */
+
+        .enroll-area {
+            text-align: center;
+
+            margin-top: 35px;
+        }
+
+        .enroll-button {
+            border: none;
+
+            background: #8b0000;
+
+            color: white;
+
+            padding: 16px 38px;
+
+            font-size: 17px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: all 0.2s;
+
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .enroll-button:hover {
+            background: #680000;
+
+            transform: translateY(-2px);
+        }
+
+        .enroll-button:active {
+            transform: translateY(0);
+        }
+
+        .enroll-note {
+            margin-top: 10px;
+
+            color: #777;
+
+            font-size: 12px;
+        }
+
+
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+
+        footer {
+            background: #292929;
+
+            color: #ddd;
+
+            margin-top: 30px;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: auto;
+
+            padding: 35px 20px;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 30px;
+        }
+
+        .footer-title {
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: 20px;
+
+            margin-bottom: 8px;
+        }
+
+        .footer-text {
+            color: #aaa;
+
+            font-size: 13px;
+        }
+
+
+        /* =========================================================
+           PRANK SCREEN
+        ========================================================= */
+
+        #prankScreen {
+            position: fixed;
+
+            inset: 0;
+
+            background: #050505;
+            filter: brightness(2.2);
+
+            display: none;
+
+            align-items: center;
+            justify-content: center;
+
+            z-index: 99999;
+
+            overflow: hidden;
+        }
+
+
+        /* =========================================================
+           BRIGHT FLASH
+        ========================================================= */
+
+        #flash {
+            position: fixed;
+
+            inset: 0;
+
+            background: white;
+            filter: brightness(3);
+
+            opacity: 0;
+
+            pointer-events: none;
+
+            z-index: 100001;
+        }
+
+        #flash.active {
+            animation: flashEffect 0.45s ease-out;
+        }
+
+        @keyframes flashEffect {
+
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+
+        }
+
+
+        /* =========================================================
+           SCARY FACE
+        ========================================================= */
+
+        .scary-face {
+            width: 280px;
+            height: 350px;
+
+            position: relative;
+
+            background:
+                radial-gradient(
+                    circle at 50% 40%,
+                    #333,
+                    #080808 65%
+                );
+
+            border-radius: 48% 48% 45% 45%;
+
+            box-shadow:
+                0 0 50px rgba(255, 255, 255, 0.08);
+
+            animation: faceAppear 0.3s ease-out;
+        }
+
+        @keyframes faceAppear {
+
+            from {
+                transform: scale(0.2);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+        }
+
+
+        /* =========================================================
+           EYES
+        ========================================================= */
+
+        .eye {
+            position: absolute;
+
+            width: 58px;
+            height: 75px;
+
+            background: white;
+
+            border-radius: 50%;
+
+            top: 105px;
+
+            box-shadow:
+                0 0 20px rgba(255, 255, 255, 0.5);
+        }
+
+        .eye::after {
+            content: "";
+
+            position: absolute;
+
+            width: 20px;
+            height: 35px;
+
+            background: black;
+
+            border-radius: 50%;
+
+            left: 19px;
+            top: 20px;
+        }
+
+        .eye.left {
+            left: 45px;
+
+            transform: rotate(-8deg);
+        }
+
+        .eye.right {
+            right: 45px;
+
+            transform: rotate(8deg);
+        }
+
+
+        /* =========================================================
+           MOUTH
+        ========================================================= */
+
+        .mouth {
+            position: absolute;
+
+            width: 130px;
+            height: 70px;
+
+            background: #050505;
+
+            border-radius: 50%;
+
+            left: 75px;
+            top: 210px;
+
+            border: 3px solid #111;
+
+            overflow: hidden;
+        }
+
+        .teeth {
+            display: flex;
+
+            justify-content: center;
+
+            gap: 3px;
+
+            padding-top: 5px;
+        }
+
+        .tooth {
+            width: 9px;
+            height: 24px;
+
+            background: #eee;
+
+            clip-path:
+                polygon(
+                    0 0,
+                    100% 0,
+                    80% 100%,
+                    20% 100%
+                );
+        }
+
+
+        /* =========================================================
+           SCREEN SHAKE
+        ========================================================= */
+
+        .shake {
+            animation: shake 0.08s infinite;
+        }
+
+        @keyframes shake {
+
+            0% {
+                transform: translate(0, 0);
+            }
+
+            25% {
+                transform: translate(-5px, 3px);
+            }
+
+            50% {
+                transform: translate(4px, -3px);
+            }
+
+            75% {
+                transform: translate(-3px, -2px);
+            }
+
+            100% {
+                transform: translate(3px, 2px);
+            }
+
+        }
+
+
+        /* =========================================================
+           MOBILE
+        ========================================================= */
+
+        @media (max-width: 700px) {
+
+            .top-bar-inner {
+                display: block;
+            }
+
+            .top-links {
+                gap: 10px;
+
+                flex-wrap: wrap;
+            }
+
+            .top-right {
+                display: none;
+            }
+
+            .header-inner {
+                padding: 15px;
+            }
+
+            .logo {
+                width: 68px;
+                height: 68px;
+            }
+
+            .brand {
+                gap: 12px;
+            }
+
+            .brand-text h1 {
+                font-size: 17px;
+                letter-spacing: 0.02em;
+            }
+
+            .brand-text p {
+                font-size: 9px;
+                letter-spacing: 0.06em;
+            }
+
+            .nav-links a {
+                padding: 12px;
+
+                font-size: 12px;
+            }
+
+            .search {
+                display: none;
+            }
+
+            .article-image {
+                height: 230px;
+            }
+
+            .article-title {
+                font-size: 34px;
+            }
+
+            .course-details {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+            }
+
+            .scary-face {
+                transform: scale(0.75);
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================================
+         NORMAL WEBSITE
+    ========================================================= -->
+
+    <div id="website">
+
+
+        <!-- TOP BAR -->
+
+        <div class="top-bar">
+
+            <div class="top-bar-inner">
+
+                <div class="top-links">
+
+                    <span>Students</span>
+
+                    <span>Faculty & Staff</span>
+
+                    <span>Alumni</span>
+
+                    <span>Contact</span>
+
+                </div>
+
+
+                <div class="top-right">
+
+                    <span>English</span>
+
+                    <span>Accessibility</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             COLLEGE HEADER
+        ====================================================== -->
+
+        <header>
+
+            <div class="header-inner">
+
+                <div class="brand">
+
+
+                    <!-- YOUR COLLEGE LOGO -->
+
+                    <div class="logo">
+
+                        <img
+                            src="college-logo.png"
+                            alt="College Logo"
+                        >
+
+                    </div>
+
+
+                    <!-- Indian Institute of Technology Madras -->
+
+                    <div class="brand-text">
+
+                        <h1>
+                            Indian Institute of Technology Madras
+                        </h1>
+
+                        <p>
+                            Excellence in Education, Research & Innovation
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =====================================================
+             NAVIGATION
+        ====================================================== -->
+
+        <nav>
+
+            <div class="nav-inner">
+
+                <div class="nav-links">
+
+                    <a href="#">
+                        Academics
+                    </a>
+
+                    <a href="#">
+                        Research
+                    </a>
+
+                    <a href="#">
+                        Innovation
+                    </a>
+
+                    <a href="#">
+                        Campus Life
+                    </a>
+
+                    <a href="#">
+                        News
+                    </a>
+
+                    <a href="#">
+                        About
+                    </a>
+
+                </div>
+
+
+                <div class="search">
+                    🔍
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- =====================================================
+             BREADCRUMB
+        ====================================================== -->
+
+        <div class="breadcrumb-container">
+
+            <div class="breadcrumb">
+
+                Home
+
+                <span>/</span>
+
+                News
+
+                <span>/</span>
+
+                Course Announcements
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             ARTICLE
+        ====================================================== -->
+
+        <main class="article-container">
+
+
+            <span class="category">
+
+                COURSE ANNOUNCEMENT
+
+            </span>
+
+
+            <h1 class="article-title">
+
+                New Artificial Intelligence
+                Course Announced for Students
+
+            </h1>
+
+
+            <div class="date">
+
+                29 September 2026
+
+                &nbsp; | &nbsp;
+
+                Academic Affairs
+
+            </div>
+
+
+            <div class="article-line"></div>
+
+
+            <!-- =================================================
+                 YOUR COLLEGE IMAGE
+                 
+                 Replace college-phot.jpg with your image name
+            ================================================== -->
+
+            <div class="article-image">
+
+                <img
+                    src="college-phot.jpg"
+                    alt="College Campus"
+                >
+
+            </div>
+
+
+            <!-- =================================================
+                 ARTICLE CONTENT
+            ================================================== -->
+
+            <div class="article-content">
+
+
+                <p>
+
+                   Indian Institute of Technology Madras (IIT Madras) has launched 
+                   five courses on Artificial Intelligence through SWAYAM Plus that 
+                   are being offered free of cost. These 25 to 45 hours courses, being 
+                   professionals.
+                </p>
+
+
+                <p>
+
+                    The course provides students with an
+                    introduction to modern AI concepts,
+                    machine learning fundamentals,
+                    real-world applications and emerging
+                    technologies.
+
+                    The key focus of these courses is to make AI 
+                    available for every one as no prior AI knowledge 
+                    required to apply for these courses.
+
+                    Those interested can register through the following link
+                     with 2nd October 2026 being the last date to register -
+
+                </p>
+
+
+                <h2>
+
+                    About the Course
+
+                </h2>
+
+
+                <p>
+
+                    The programme has been designed for students
+                    who are interested in developing their
+                    understanding of artificial intelligence and
+                    exploring its applications across different
+                    industries.
+
+                </p>
+
+
+                <!-- =================================================
+                     COURSE DETAILS
+                ================================================== -->
+
+                <div class="course-box">
+
+
+                    <h3>
+
+                        Course Information
+
+                    </h3>
+
+
+                    <div class="course-details">
+
+
+                        <div class="detail">
+
+                            <strong>
+                                Course
+                            </strong>
+
+                            Introduction to Artificial Intelligence
+
+                        </div>
+
+
+                        <div class="detail">
+
+                            <strong>
+                                Duration
+                            </strong>
+
+                            6 Weeks
+
+                        </div>
+
+
+                        <div class="detail">
+
+                            <strong>
+                                Mode
+                            </strong>
+
+                            Online
+
+                        </div>
+
+
+                        <div class="detail">
+
+                            <strong>
+                                Eligibility
+                            </strong>
+
+                            Open to Students
+
+                        </div>
+
+
+                        <div class="detail">
+
+                            <strong>
+                                Course Fee
+                            </strong>
+
+                            Free
+
+                        </div>
+
+
+                        <div class="detail">
+
+                            <strong>
+                                Certificate
+                            </strong>
+
+                            Available on Completion
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- =================================================
+                         PRANK BUTTON
+                    ================================================== -->
+
+                    <div class="enroll-area">
+
+
+                        <button
+                            class="enroll-button"
+                            onclick="startPrank()"
+                        >
+
+                            Enroll for the Course
+
+                        </button>
+
+
+                        <div class="enroll-note">
+
+                            Registration is open to eligible students.
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+
+        <!-- =====================================================
+             FOOTER
+        ====================================================== -->
+
+        <footer>
+
+            <div class="footer-inner">
+
+
+                <div>
+
+                    <div class="footer-title">
+
+                        Indian Institute of Technology Madras
+
+                    </div>
+
+
+                    <div class="footer-text">
+
+                        Excellence in Education,
+                        Research & Innovation
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-text">
+
+                    © 2026 Indian Institute of Technology Madras
+
+                    <br>
+
+                    Academic Affairs Office
+
+                </div>
+
+
+            </div>
+
+        </footer>
+
+
+    </div>
+
+
+    <!-- =========================================================
+         PRANK SCREEN
+    ========================================================= -->
+
+    <div id="prankScreen">
+
+
+        <div class="scary-face">
+
+
+            <!-- LEFT EYE -->
+
+            <div class="eye left"></div>
+
+
+            <!-- RIGHT EYE -->
+
+            <div class="eye right"></div>
+
+
+            <!-- MOUTH -->
+
+            <div class="mouth">
+
+                <div class="teeth">
+
+                    <div class="tooth"></div>
+                    <div class="tooth"></div>
+                    <div class="tooth"></div>
+                    <div class="tooth"></div>
+                    <div class="tooth"></div>
+                    <div class="tooth"></div>
+                    <div class="tooth"></div>
+                    <div class="tooth"></div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =========================================================
+         FLASH EFFECT
+    ========================================================= -->
+
+    <div id="flash"></div>
+
+
+    <!-- =========================================================
+         YOUR CUSTOM SOUND
+         
+         Put scare.mp3 beside index.html
+    ========================================================= -->
+
+    <audio id="scareAudio">
+
+        <source
+            src="scare.mp3"
+            type="audio/mpeg"
+        >
+
+    </audio>
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================= -->
+
+    <script>
+
+
+        function startPrank() {
+
+
+            /* -----------------------------------------------------
+               Get website elements
+            ----------------------------------------------------- */
+
+            const website =
+                document.getElementById("website");
+
+
+            const prankScreen =
+                document.getElementById("prankScreen");
+
+
+            const flash =
+                document.getElementById("flash");
+
+
+            const audio =
+                document.getElementById("scareAudio");
+
+
+            /* -----------------------------------------------------
+               Hide the normal college page
+            ----------------------------------------------------- */
+
+            website.style.display = "none";
+
+
+            /* -----------------------------------------------------
+               Show prank screen
+            ----------------------------------------------------- */
+
+            prankScreen.style.display = "flex";
+
+
+            /* -----------------------------------------------------
+               BRIGHT FLASH
+            ----------------------------------------------------- */
+
+            flash.classList.remove("active");
+
+            /*
+               Forces the browser to restart
+               the CSS animation.
+            */
+
+            void flash.offsetWidth;
+
+            flash.classList.add("active");
+
+
+            /* -----------------------------------------------------
+               SCREEN SHAKE
+            ----------------------------------------------------- */
+
+            prankScreen.classList.add("shake");
+
+
+            /* -----------------------------------------------------
+               PLAY CUSTOM AUDIO
+               
+               Make sure scare.mp3 is beside this HTML file.
+            ----------------------------------------------------- */
+
+            audio.volume = 1;
+
+            audio.currentTime = 0;
+
+
+            audio.play().catch(function(error) {
+
+                console.log(
+                    "Audio playback was blocked:",
+                    error
+                );
+
+            });
+
+
+            /* -----------------------------------------------------
+               MOBILE VIBRATION
+            ----------------------------------------------------- */
+
+            if ("vibrate" in navigator) {
+
+                navigator.vibrate([
+                    220,
+                    90,
+                    260,
+                    90,
+                    340,
+                    100,
+                    520,
+                    120,
+                    700
+                ]);
+
+            }
+
+
+            /* -----------------------------------------------------
+               STOP AFTER 10 SECONDS
+            ----------------------------------------------------- */
+
+            setTimeout(function() {
+
+
+                /* Stop audio */
+
+                audio.pause();
+
+                audio.currentTime = 0;
+
+
+                /* Stop vibration */
+
+                if ("vibrate" in navigator) {
+
+                    navigator.vibrate(0);
+
+                }
+
+
+                /* Stop screen shake */
+
+                prankScreen.classList.remove("shake");
+
+
+            }, 10000);
+
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
